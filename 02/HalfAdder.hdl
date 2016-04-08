@@ -18,8 +18,8 @@ CHIP HalfAdder {
     // 1 + 0 == 01
     // 0 + 1 == 01
     // 1 + 1 == 10
-    // the right side of the result is sum
-    // the left side of the result is carry
+    // the right side of the result represents the sum
+    // the left side of the result represents the carry
     Xor(a=a, b=b, out=sum);
     And(a=a, b=b, out=carry);
 }
